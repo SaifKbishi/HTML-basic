@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px;
+    min-height: 100vh;
+}
+#blueList{
+    color: blue;
+}
+#firstList{
+    color: blue; 
+}
+#redList{
+    color: red;
+}
+#secondList{
+    color: red;
+}
+#withSquaresList{
+    list-style: square;
+}
+#thirdList{    
+    text-decoration-line: underline;
+    font-style: italic;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="this is just the description">
+        <meta name="keywords" content="awesome keywords">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css">        
+        <title>Forms</title>
+    </head>
+    <body>
+        
+        <div>
+            <h1>Create an Account</h1>
+        </div>
+        <form action="#" id="myform">
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div><br>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password">
+            </div><br>
+            <div>
+                <label for="age">Age: </label>
+                <select name="age" id="age">Age:>
+                    <option value="18">Under 18</option>
+                    <option value="24">18 - 24</option>
+                    <option value="45">25 - 45</option>
+                    <option value="55">46 - 55</option>
+                    <option value="56">Above 56</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="about">Tell us about yourself:</label><br>
+                <textarea name="about" id="about" cols="50" rows="10"></textarea>
+            </div><br>
+            <div>
+                <input type="checkbox" name="terms">
+                <label for="terms">I agree to the <a href="">Terms and Conditions</a></label>
+            </div><br>
+            <div>
+                <button type="submit" for="myform">Sign Up</button>
+            </div>
+        </form>
+    </body>
+</html>
