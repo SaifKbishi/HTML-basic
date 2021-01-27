@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#thinRed{
+    border: 1px solid red;
+    font-size: 25px;
+    border-radius: 5px;
+}
+#boldItalic{
+    font-style: italic;
+    font-weight: bold;
+}
+#shadowBG{
+    font-family: monospace;
+    color: white;
+    background-color: black;
+}
