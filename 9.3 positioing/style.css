@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+
+div{
+    border: 2px solid black;
+    margin: 5px;
+    position: absolute;
+    background: white;
+}
+#one{
+    width: 200px;
+    height: 200px;
+}
+#two{
+    width: 200px;
+    height: 300px;
+    top: 150px;
+    left: 150px;
+}
+#three{
+    width: 500px;
+    height: 200px;
+    top: 280px;
+}
+#four{
+    width: 100px;
+    height: 500px;
+    left: 400px;
+}
