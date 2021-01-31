@@ -1,0 +1,18 @@
+.box{
+width: 200px;
+height: 200px;
+}
+#green{
+ background: green;
+}
+#blue{
+ background: blue;
+}
+#red{
+ background: red;
+}
+
+section{
+ display: flex;
+ justify-content: space-between;
+}

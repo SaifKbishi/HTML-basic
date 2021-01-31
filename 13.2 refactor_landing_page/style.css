@@ -1,0 +1,85 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+ text-decoration:none;
+ color: whitesmoke;
+}
+li{
+ list-style-type: none; 
+}
+#home{
+ color: #ADADAC;
+ text-align: center;
+ background: url('peyto-lake.jpg') no-repeat center center/cover;
+ height: 100vh; 
+ filter: brightness(80%);
+}
+#welcome{
+ padding: 10rem 0; 
+ text-transform: uppercase;
+ opacity: 0.8;
+}
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+ #logo a h2{  
+  font-size: calc(4rem + 2vw);
+ }
+ #logo a h5{
+  font-size: calc(2rem + 1vw);
+ }
+ #navMenu a{
+  font-size: calc(1.2rem + 1vw);
+ }
+ #logo{
+  padding: 1.5rem;
+ }
+ #welcome h2{
+  font-size: calc(1.6rem + 1vw);
+ }
+ #welcome h1{
+  font-size: calc(4rem + 2vw);
+ }
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 768px) {
+ #logo a h2{  
+  font-size: 2rem;
+ }
+ #logo a h5{
+  font-size: 0.8rem;
+ }
+ #navMenu a{
+  font-size: 1.7rem;
+ }
+ #logo{
+  padding: 1rem;
+ }
+ #welcome {
+  padding-top: 20rem;
+ }
+ #welcome h2{
+  font-size: calc(4rem);
+ }
+ #welcome h1{
+  font-size: calc(4rem + 6vw);
+ }
+ header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ #navMenu{
+  display: flex;
+  flex-direction: row; 
+ }
+ #navMenu li{
+  padding: 1rem;
+ }
+}

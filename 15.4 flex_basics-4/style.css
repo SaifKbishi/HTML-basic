@@ -1,0 +1,22 @@
+.box{
+ width: 200px;
+ height: 200px;
+ }
+ #green{
+  background: green;
+ }
+ #blue{
+  background: blue;
+ }
+ #red{
+  background: red;
+ }
+ 
+ section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+ }

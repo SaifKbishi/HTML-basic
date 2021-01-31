@@ -1,0 +1,21 @@
+.box{
+ width: 200px;
+ height: 200px;
+ }
+ #green{
+  background: green;
+ }
+ #blue{
+  background: blue;
+ }
+ #red{
+  background: red;
+ }
+ 
+ section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+ }

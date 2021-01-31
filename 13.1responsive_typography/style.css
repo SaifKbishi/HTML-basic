@@ -1,0 +1,36 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding:0;
+}
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align: center; 
+}
+
+#responsive h1{
+ padding: 2rem 0;
+ font-size: 20px;
+}
+#responsive p{
+ padding: 0 1rem;
+}
+
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+ #responsive h1{
+  font-size: calc(20px + 1vw);
+ }
+ #responsive{
+  font-size: calc(20px + 2vw);
+ }
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 1750px) {
+ #responsive h1{
+  font-size: 45px;
+ }
+ #responsive{
+  font-size: 55px;
+ }
+}

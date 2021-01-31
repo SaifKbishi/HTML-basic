@@ -1,0 +1,49 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding:0;
+}
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align: center; 
+}
+
+#responsive h1{
+ padding: 2rem 0;
+}
+#responsive p{
+ padding: 0 1rem;
+}
+
+/*smartphones*/
+@media(max-width:500px){
+ #responsive{
+  font-size: 1rem;
+ }
+}
+/*tablet*/
+@media(min-width:501px) and (max-width:768px){
+ #responsive{
+  font-size: 1.3rem;
+ }
+}
+/*Normal*/
+@media(min-width:769px) and (max-width:1200px){
+ #responsive{
+  font-size: 1.5rem;
+ }
+}
+/*widescreen*/
+@media(min-width:1200px){
+ #responsive{
+  font-size: 1.7rem;
+  font-weight: bold;
+ }
+}
+/*landscape*/
+@media(max-height:500px){
+ #responsive{
+  font-size: 2rem;
+  
+ }
+}
