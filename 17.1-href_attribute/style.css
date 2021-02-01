@@ -1,0 +1,32 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+ text-decoration: none;
+}
+li{
+ list-style-type: none; 
+}
+#afterPseudo{
+ padding: 30px;
+ font-size: 4rem;
+}
+
+#afterPseudo a::after{
+ content: attr(href);
+}
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 768px) {
+
+}
+

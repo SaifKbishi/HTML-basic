@@ -1,0 +1,65 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background: black;
+ color: whitesmoke;
+ font-size: 2.5rem;
+ min-height: 100vh;
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.cool-box{
+ margin: 50px;
+ max-width: 300px;
+ padding: 50px;
+ border: 2px solid orange;
+ position: relative;
+}
+
+
+.text::before, .text::after {
+ content: '';
+ display: block;
+ position: absolute;
+ background: #000;
+ z-index: -1;
+}
+
+.text::before {
+ top: -0.3em; 
+ bottom: -0.3em;
+ left: -3em;
+ right: 1em;
+ width: 270px; 
+ }
+ .text::after {
+  top: -2.3em; 
+  bottom: -0.3em;
+  left: 1em;
+  right: 1em;
+  height: 150px;
+  }
+
+.text{
+ position: relative;
+ z-index: 10;
+}
+
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 768px) {
+
+}
+

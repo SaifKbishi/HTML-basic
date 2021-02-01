@@ -1,0 +1,44 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+ text-decoration:none; 
+}
+li{
+ list-style-type: none; 
+}
+.box{
+ margin: 2rem;
+ width: 200px; 
+ height: 200px;
+ background-color: red;
+ position: relative;
+}
+.box::after{
+ content: '';
+ position: absolute;
+ background-color: purple;
+ width: 100px;
+ height: 200px; 
+ z-index: 10;
+}
+
+.box:hover:after{
+ background-color: blue;
+}
+
+
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 768px) {
+
+}
