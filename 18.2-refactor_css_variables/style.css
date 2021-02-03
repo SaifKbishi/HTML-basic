@@ -1,0 +1,56 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+ text-decoration:none;
+ color: whitesmoke;
+}
+li{
+ list-style-type: none; 
+}
+
+
+#home{
+ background: #2C3E51;
+ height: 100vh;
+}
+
+
+/*fluid font from 320px onwards*/
+@media (min-width: 320px) {
+
+}
+/*fix font size for large screens. Calculate this point*/
+@media (min-width: 768px) {
+ #navMenu a{
+  font-size: 1.7rem;
+ }
+ #logo{
+  padding: 1rem;
+ }
+ #logo img{
+  width: 8rem;
+  height: 4rem;
+ }
+ header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ #navMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+ #navMenu li{
+  padding: 1rem;
+ }
+
+}

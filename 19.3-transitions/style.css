@@ -1,0 +1,132 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+html{font-size: 10px;}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+ height: 100vh;
+ position: relative;
+ display: flex; 
+}
+.box{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 200px;
+ height: 150px;
+ border: 5px solid #000;
+}
+.box p{
+ font-size: 30px;
+}
+#Rotate{
+ top: 50px;
+ left: 60px;
+ overflow: hidden;
+}
+#Rotate::before{
+ content: '';
+ position: absolute;
+ width: 200px;
+ height: 150px;
+ background-color: yellowgreen;
+ transform-origin: top left;
+ transform: rotate(-90deg); 
+ transition: all 1s;
+ z-index: -1;
+}
+
+#Rotate:hover::before{
+ transform-origin: top left;
+ transform: rotate(0deg);
+}
+/*_______Translate______*/
+#Translate{
+ top: 280px;
+ left: 150px;
+ /*overflow: hidden;*/
+}
+#Translate::before{
+ content: '';
+ position: absolute;
+ width: 200px;
+ height: 150px;
+ background-color: #333;
+ transform: translateX(-100%);
+ transition: all 1s;
+ z-index: -1;
+}
+#Translate:hover::before{
+ transform: translateX(0);
+}
+#Translate:hover{
+ transition: all 1s;
+ color: white;
+}
+
+
+
+
+/****************/
+#TranslateY{
+ top: 200px;
+ left: 450px;
+ position: relative;
+ transition: background 1s ease-in-out; 
+ overflow: hidden;
+}
+#TranslateY::before{
+position: absolute;
+ content: 'YEAH';
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
+ top: -160px;
+ left: -1px;
+ width: 191px;
+ height: 141px;
+ transition: all 1s ease;
+ background-color: red;
+}
+#TranslateY:hover::before{
+ transform: translate(0, 159px);
+}
+
+
+
+/****************/
+#ScaleOpacity{
+ width: 400px;
+ height: 200px;
+ top: 50px;
+ left: 600px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#ScaleOpacity p{
+
+ content: '';
+ position: absolute;
+ transition: all 4.2s fade-out;
+ 
+}
+#ScaleOpacity:hover{
+ background-color: #333;
+ transform: scale(1.1);
+transition: font-size 4s;
+transition: all 2s;
+}
+#ScaleOpacity p:hover{
+ background-color: #333;
+ transform: scale(1.1);
+transition: all 4s;
+
+}
