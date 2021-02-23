@@ -8,12 +8,98 @@ body {
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/*fluid font from 320px onwards*/
-@media (min-width: 320px) {
-
+section{
+ background-color: #000;
+ height: 100vh;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 }
-/*fix font size for large screens. Calculate this point*/
-@media (min-width: 768px) {
+.spinner1{
+ width: 100px;
+ height: 100px;
+ /*background-color: #fff;*/
+ border-radius: 50%;
+ border: 6px #333 solid;
+ border-top: 6px solid orange;
+ animation: drawArc1 1s linear infinite;
+}
+@keyframes drawArc1{
+ to   { transform: rotate(360deg);  } 
+}
+/*spinner2*/
+.spinner2{
+ width: 100px;
+ height: 100px;
+/* background-color: #fff;*/
+ border-radius: 50%;
+ border: 6px  solid;
+ border-top: 6px solid orange;
+ border-left: 6px solid transparent;
+ animation: drawArc1 1s linear infinite;
+}
+@keyframes drawArc1{
+ to   { transform: rotate(360deg);  } 
+}
 
+/*spinner3*/
+.spinner3{
+ width: 150px;
+ display: flex;
+ justify-content: space-around;
+}
+
+.ball1,
+.ball2,
+.ball3{
+ background: blue;
+ height: 15px;
+ width: 15px;
+ margin: 0px 5px;
+ border-radius: 50%;
+ animation: change-color 1s infinite;
+}
+.ball2{
+ animation-delay: 0.5s;
+}
+.ball3{
+ animation-delay: 0.75s;
+}
+@keyframes change-color {
+ to {
+   background: gray;
+ }
+}
+/*spinner4*/
+.spinner4{
+width: 150px;
+display: flex;
+justify-content: space-around;
+}
+.ball_1,
+.ball_2,
+.ball_3{
+ background: blue;
+ height: 15px;
+ width: 15px;
+ margin: 0 5px;
+ border-radius: 50%;
+ animation: jump-the-ball 1s ease-in-out infinite;
+}
+.ball_2{
+ animation-delay: 0.5s;
+}
+.ball_3{
+ animation-delay: 0.75s;
+}
+@keyframes jump-the-ball{
+ 0%{
+  transform: translateY(0px);
+ }
+ 30%{
+   transform: translateY(-15px);
+ }
+ 60%{
+  transform: translateY(0px);
+ }
 }

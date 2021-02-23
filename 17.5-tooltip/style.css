@@ -17,7 +17,8 @@ a[data-tooltip]{
 }
 
 a[data-tooltip]:hover::before{
- content:'this is a badass tootip :)';
+ /*content:'this is a badass tootip :)';*/
+ content:attr(data-tooltip);
  color: blue;
  padding: 10px;
  position: absolute;
